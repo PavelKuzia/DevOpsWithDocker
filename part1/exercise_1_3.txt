@@ -1,0 +1,3 @@
+docker run -d --rm -it --name exercise devopsdockeruh/simple-web-service:ubuntu
+docker exec exercise tail -f ./text.log
+You can find the source code here: https://github.com/docker-hy
