@@ -1,0 +1,7 @@
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker pull devopsdockeruh/simple-web-service:alpine
+ubuntu: 83 MB
+alpine: 15.7 MB
+docker run -d -it --name exercise15 devopsdockeruh/simple-web-service:alpine
+docker exec -it exercise15 tail -f ./text.log
+You can find the source code here: https://github.com/docker-hy
