@@ -4,7 +4,7 @@ name: Exercise 3.1
 on:
   push:
     branches:
-      - main
+      - master
 
 # Job called build runs-on ubuntu-latest
 jobs:
