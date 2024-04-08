@@ -26,6 +26,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: exercise_3_1
-        context: ./part3/exercise_3_1/express-app/
+        tags: pavelkuzia/simple_app:latest
+        context: ./part3/exercise_3_1/
         file: Dockerfile
