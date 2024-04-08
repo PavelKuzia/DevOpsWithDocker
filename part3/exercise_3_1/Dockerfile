@@ -2,7 +2,7 @@ FROM node:16
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY ./part3/exercise_3_1/package*.json ./
 
 RUN npm install
 
