@@ -27,4 +27,5 @@ jobs:
       with:
         push: true
         tags: exercise_3_1
-        file: part3/exercise_3_1/express-app/Dockerfile
+        context: ./part3/exercise_3_1/express-app/
+        file: Dockerfile
