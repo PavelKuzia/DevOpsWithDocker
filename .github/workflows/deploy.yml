@@ -28,4 +28,4 @@ jobs:
         context: .
         push: true
         tags: pavelkuzia/simple_app:latest        
-        file: /part3/exercise_3_1/Dockerfile
+        file: ./part3/exercise_3_1/Dockerfile
