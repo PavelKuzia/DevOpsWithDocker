@@ -31,7 +31,7 @@ jobs:
         file: ./part3/exercise_3_2/Dockerfile
         
     - name: Deployment
-        env:
-            deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        run: curl "$deploy_url"
+      env:
+        deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      run: curl "$deploy_url"
     
