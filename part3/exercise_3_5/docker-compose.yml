@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:        
+    frontend:
+        container_name: frontend
+        build:
+            context: .
+            dockerfile: DockerfileFrontend
+        ports:
+            - "5000:5000"
+        environment:
+            - REACT_APP_BACKEND_URL=http://localhost:8080
+    
+    backend:
+        container_name: backend
+        build:
+            context: .
+            dockerfile: DockerfileBackend
+        environment:
+            - REQUEST_ORIGIN=http://localhost:5000

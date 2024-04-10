@@ -1,0 +1,15 @@
+FROM golang:1.22
+
+WORKDIR /usr/src/app/backend
+
+EXPOSE 8080
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+COPY ./example-backend .
+
+RUN go build && useradd -m backenduser && chown backenduser .
+
+USER backenduser
+
+CMD ./server
